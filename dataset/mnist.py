@@ -13,15 +13,25 @@ from os.path import join
 class MnistDataloader(object):
     def __init__(
         self,
-        training_images_filepath,
-        training_labels_filepath,
-        test_images_filepath,
-        test_labels_filepath,
+        # training_images_filepath,
+        # training_labels_filepath,
+        # test_images_filepath,
+        # test_labels_filepath,
     ):
-        self.training_images_filepath = training_images_filepath
-        self.training_labels_filepath = training_labels_filepath
-        self.test_images_filepath = test_images_filepath
-        self.test_labels_filepath = test_labels_filepath
+        input_path = "C:\\Users\\admin\\.cache\\kagglehub\\datasets\\hojjatk\\mnist-dataset\\versions\\1"
+
+        self.training_images_filepath = join(
+            input_path, "train-images-idx3-ubyte/train-images-idx3-ubyte"
+        )
+        self.training_labels_filepath = join(
+            input_path, "train-labels-idx1-ubyte/train-labels-idx1-ubyte"
+        )
+        self.test_images_filepath = join(
+            input_path, "t10k-images-idx3-ubyte/t10k-images-idx3-ubyte"
+        )
+        self.test_labels_filepath = join(
+            input_path, "t10k-labels-idx1-ubyte/t10k-labels-idx1-ubyte"
+        )
 
     def read_images_labels(self, images_filepath, labels_filepath):
         labels = []
@@ -47,6 +57,9 @@ class MnistDataloader(object):
             img = np.array(image_data[i * rows * cols : (i + 1) * rows * cols])
             img = img.reshape(28, 28)
             images[i][:] = img
+
+        images = np.array(images)
+        labels = np.array(labels)
 
         return images, labels
 

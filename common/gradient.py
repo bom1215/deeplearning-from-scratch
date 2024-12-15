@@ -37,6 +37,8 @@ def numerical_gradient(f, x):
     grad = np.zeros_like(x)
 
     it = np.nditer(x, flags=["multi_index"], op_flags=["readwrite"])
+    print("it: ", it)
+
     while not it.finished:
         idx = it.multi_index
         tmp_val = x[idx]
