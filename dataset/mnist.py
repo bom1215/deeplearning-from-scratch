@@ -18,20 +18,12 @@ class MnistDataloader(object):
         # test_images_filepath,
         # test_labels_filepath,
     ):
-        input_path = "C:\\Users\\admin\\.cache\\kagglehub\\datasets\\hojjatk\\mnist-dataset\\versions\\1"
+        input_path = "C:\\Users\\Beom\\deeplearning-from-scratch\\dataset\\mnist\\"
 
-        self.training_images_filepath = join(
-            input_path, "train-images-idx3-ubyte/train-images-idx3-ubyte"
-        )
-        self.training_labels_filepath = join(
-            input_path, "train-labels-idx1-ubyte/train-labels-idx1-ubyte"
-        )
-        self.test_images_filepath = join(
-            input_path, "t10k-images-idx3-ubyte/t10k-images-idx3-ubyte"
-        )
-        self.test_labels_filepath = join(
-            input_path, "t10k-labels-idx1-ubyte/t10k-labels-idx1-ubyte"
-        )
+        self.training_images_filepath = input_path + "train-images-idx3-ubyte\\train-images.idx3-ubyte"
+        self.training_labels_filepath = input_path + "train-labels-idx1-ubyte\\train-labels.idx1-ubyte"
+        self.test_images_filepath = input_path + "t10k-images-idx3-ubyte\\t10k-images.idx3-ubyte"
+        self.test_labels_filepath = input_path + "t10k-labels-idx1-ubyte\\t10k-labels.idx1-ubyte"
 
     def read_images_labels(self, images_filepath, labels_filepath):
         labels = []
