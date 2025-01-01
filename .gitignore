@@ -1,3 +1,4 @@
-common/__pycache__
-dataset/__pycache__
-dataset/mnist/*
+deeplearning-from-scratch-1/common/__pycache__
+deeplearning-from-scratch-1/dataset/__pycache__
+deeplearning-from-scratch-1/dataset/mnist/*
+deeplearning-from-scratch-1/common/__pycache__/
