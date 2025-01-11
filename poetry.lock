@@ -393,6 +393,20 @@ files = [
 ]
 
 [[package]]
+name = "dezero"
+version = "0.0.13"
+description = "Deep Learning Framework from Zero"
+optional = false
+python-versions = "*"
+files = [
+    {file = "dezero-0.0.13-py3-none-any.whl", hash = "sha256:34f6912f3e2139ad399764e1d9812ab859f83590cccde13bf58ce27b9455a975"},
+    {file = "dezero-0.0.13.tar.gz", hash = "sha256:521b759d6239872088427204b425a0d22d0ebb4a007f9710751505e9f7158759"},
+]
+
+[package.dependencies]
+numpy = "*"
+
+[[package]]
 name = "executing"
 version = "2.1.0"
 description = "Get the currently executing AST node of a frame, and other information"
@@ -1468,4 +1482,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "6b3a1122fe38bd2573b5c75b7970b8dbfee25570d019d8fe3f8b5b43dfe26340"
+content-hash = "3a44c705b110746fa448e85e735184ea80bafa665b71fd988e86e26d09f0c0d7"
