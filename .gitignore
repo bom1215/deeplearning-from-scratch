@@ -4,3 +4,4 @@ deeplearning-from-scratch-1/dataset/mnist/*
 deeplearning-from-scratch-1/common/__pycache__/*
 deeplearning-from-scratch-2/common/__pycache__/*
 deeplearning-from-scratch-2/dataset/__pycache__/*
+deeplearning-from-scratch-2/cbow_params.pkl
