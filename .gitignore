@@ -5,3 +5,5 @@ deeplearning-from-scratch-1/common/__pycache__/*
 deeplearning-from-scratch-2/common/__pycache__/*
 deeplearning-from-scratch-2/dataset/__pycache__/*
 deeplearning-from-scratch-2/cbow_params.pkl
+deeplearning-from-scratch-2/dataset/*.npy
+deeplearning-from-scratch-2/dataset/*.txt
